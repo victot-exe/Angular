@@ -57,3 +57,11 @@
 * Tudo é montado dinamicamente no client **(ângular e react)**
 * Pobre em SO (aparecer no rank do google)
 
+[Baixe o Angular](angular.io)  
+
+## Entendendo os arquivos
+* /src -> Pasta raiz do projeto
+* index.html
+* polyfills.ts -> aumenta a compatibilidade com os navegadores
+* style.css
+* /src/app -> É onde ficam os arquivos da app na web
