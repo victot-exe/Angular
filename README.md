@@ -65,3 +65,17 @@
 * polyfills.ts -> aumenta a compatibilidade com os navegadores
 * style.css
 * /src/app -> É onde ficam os arquivos da app na web
+
+## Styles
+* scooped (escopo local do componente) sempre sobrepõe o escopo global.  
+### botões de chamada dinâmica
+* _camada de gerenciamento de estado_
+* componente pai = componente principal que tem outros componentes principais.
+* o import `input` é um decorator para fazer pegar de outro local a classe. label ={{variável}} ou [label] = "variavel"
+* para escolher o que vai ser escrito label = "o que quer"
+
+## Data binding
+* interpolaçãob -> ~{{valor}}~
+* property binding -> ~[propriedade]="valor"~
+* event binding -> ~(evento)="Handler"~
+* two way data binding -> [(ngModel)]="propriedade"
