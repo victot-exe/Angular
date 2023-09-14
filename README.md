@@ -91,3 +91,7 @@ _associa uma função_.
 * Parâmetro -> criar a função com o parâmetro e faz o tratamento na funtion
 
 ### Two way data binding - Comunicação dos dois lados
+
+
+# Instalando o Angular
+* No terminal `npm install -g @angular/cli@14.1.2`
