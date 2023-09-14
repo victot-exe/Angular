@@ -65,17 +65,29 @@
 * polyfills.ts -> aumenta a compatibilidade com os navegadores
 * style.css
 * /src/app -> É onde ficam os arquivos da app na web
+* importar arquivos no app.module.ts e declarar a classe no declarations
 
 ## Styles
 * scooped (escopo local do componente) sempre sobrepõe o escopo global.  
-### botões de chamada dinâmica
+### Botões de chamada dinâmica
 * _camada de gerenciamento de estado_
 * componente pai = componente principal que tem outros componentes principais.
 * o import `input` é um decorator para fazer pegar de outro local a classe. label ={{variável}} ou [label] = "variavel"
 * para escolher o que vai ser escrito label = "o que quer"
 
-## Data binding
-* interpolaçãob -> ~{{valor}}~
-* property binding -> ~[propriedade]="valor"~
-* event binding -> ~(evento)="Handler"~
-* two way data binding -> [(ngModel)]="propriedade"
+## Binding Syntax (faz as informações entre os componentes
+### Data binding - Associação de dados
+* interpolaçãob -> ~{{valor}}~ -> TS => HTML 
+* property binding -> ~[propriedade]="valor"~ TS => HTML 
+* event binding -> ~(evento)="Handler"~ HTML => TS
+* two way data binding -> [(ngModel)]="propriedade" HTML <=> TS
+
+### Event binding - Associação de eventos
+_associa uma função_.  
+~~~
+<Button (evento)="funtion">blabla</Button>
+~~~
+-> eventos são os padrões do HTML (Mozilla)[colocar link]  
+* Parâmetro -> criar a função com o parâmetro e faz o tratamento na funtion
+
+### Two way data binding - Comunicação dos dois lados
