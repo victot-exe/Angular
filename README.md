@@ -75,7 +75,7 @@
 * o import `input` é um decorator para fazer pegar de outro local a classe. label ={{variável}} ou [label] = "variavel"
 * para escolher o que vai ser escrito label = "o que quer"
 
-## Binding Syntax (faz as informações entre os componentes
+## Binding Syntax - faz as informações entre os componentes
 ### Data binding - Associação de dados
 * interpolaçãob -> ~{{valor}}~ -> TS => HTML 
 * property binding -> ~[propriedade]="valor"~ TS => HTML 
@@ -95,3 +95,26 @@ _associa uma função_.
 
 # Instalando o Angular
 * No terminal `npm install -g @angular/cli@14.1.2`
+
+* `ng` -> ferranebta de construção de components
+* Para testar `ng help`
+## NG
+* `ng add <collection>` -> adiciona uma nova biblioteca
+* `ng new [nome]` -> cria um novo projeto angular
+* `ng server [project]` -> cria um servidor para a aplicação e atualiza em tempo real
+* `ng test` -> teste unitário
+* `ng doc <keyword>` -> Entra no navegador e procura na doc do angular
+* `ng generate` -> gera e modifica um esquema de arquivos `ng generate component` -> gera um componente
+* `code .` -> abrir a paste apenas no code (para não ficar um monte de arquivo na tela)
+* `ng generate --help` -> lista do que pode ser gerado
+
+# Codando em Angular amém
+## Life Cycle **Hooks**
+* `OnInit()` -> Executa uma açao quando o componente é iniciado.
+* `OnChanges()` -> Sempre que ocorre alguma alteração.
+* `DoCheck()` ->
+1. `AfterContentInit()`
+2. `AfterContentChecked()`
+3. `AfterViewInit()`
+4. `AfterViewChecked()`
+* `OnDestroy()` -> Quando destruido
