@@ -85,7 +85,7 @@
 ### Event binding - Associação de eventos
 _associa uma função_.  
 ~~~
-<Button (evento)="funtion">blabla</Button>
+<Button (evento)="funtion()">blabla</Button>
 ~~~
 -> eventos são os padrões do HTML (Mozilla)[colocar link]  
 * Parâmetro -> criar a função com o parâmetro e faz o tratamento na funtion
@@ -111,10 +111,22 @@ _associa uma função_.
 # Codando em Angular amém
 ## Life Cycle **Hooks**
 * `OnInit()` -> Executa uma açao quando o componente é iniciado.
-* `OnChanges()` -> Sempre que ocorre alguma alteração.
-* `DoCheck()` ->
-1. `AfterContentInit()`
-2. `AfterContentChecked()`
-3. `AfterViewInit()`
-4. `AfterViewChecked()`
+* `OnChanges()` -> Sempre que ocorre alguma alteração em algum valor feita por `Input`
+* `DoCheck()` -> Quando acontece alguma verificação dentro do `component`
+1. `AfterContentInit()` -> Após iniciar o `component`
+2. `AfterContentChecked()` -> Sempre depois que um `component` for verificado
+3. `AfterViewInit()` -> Executa depois que o `component` for totalmente iniciado
+4. `AfterViewChecked()` -> Sempre que for verificado pelo algoritmo de alterações do angular
 * `OnDestroy()` -> Quando destruido
+### Ordem
+1. executa o `constructor()`
+2. muda o valor e por ter feito uma mudança chama o `OnChanges()`
+3. Inicia e chama no `OnInit()`
+### Ordem checke
+1. Checked
+2. Content
+3. View
+* Primeiro checa, verifica o conteúdo e por último a view
+### OnDestroy
+* Boa prática: `destruir component que não são mais utilizados` -> Evita gasto excessivo da memória
+
